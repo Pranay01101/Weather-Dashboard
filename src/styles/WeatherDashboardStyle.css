@@ -1,0 +1,201 @@
+.weatherDashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Center title */
+.weatherDashboard h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.weatherDashboard h1 i {
+  font-size: 1.8rem;
+}
+
+/* Search bar */
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.search button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #1e90ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search button i {
+  margin-right: 8px;
+}
+
+.search button:hover {
+  background-color: #1c86ee;
+}
+
+/* Unit toggle button */
+.unitToggle {
+  margin-bottom: 20px;
+}
+
+.unitToggle button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffa500;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.unitToggle button:hover {
+  background-color: #ff8c00;
+}
+
+/* Weather display */
+.weatherDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.weatherDisplay h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.weatherDisplay .temp {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.weatherDisplay .addToFavorites {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6347;
+  color: #fff;
+  cursor: pointer;
+}
+
+.weatherDisplay .addToFavorites i {
+  margin-right: 8px;
+}
+
+.weatherDisplay .addToFavorites:hover {
+  background-color: #ee5a46;
+}
+
+/* Forecast styling */
+.forecast {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.forecast ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.forecast li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  width: 18%;
+  max-width: 150px;
+}
+
+/* Favorites section */
+.favorites {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.favorites h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.favorites ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.favorites li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.favorites li span {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.favorites li button {
+  background-color: #ff4500;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.favorites li button i {
+  margin-right: 8px;
+}
+
+.favorites li button:hover {
+  background-color: #e63900;
+}
